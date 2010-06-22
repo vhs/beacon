@@ -36,8 +36,8 @@
 #
 # $Id$
 
-TARGET = blink
-INSTALL_DIR = /Users/lukec/src/contrib/arduino-0011/
+TARGET = beacon
+INSTALL_DIR = /Users/lukec/src/contrib/arduino-018/
 PORT = /dev/tty.usb*
 UPLOAD_RATE = 19200
 AVRDUDE_PROGRAMMER = stk500v1
@@ -47,11 +47,11 @@ F_CPU = 16000000
 ############################################################################
 # Below here nothing should be changed...
 
-ARDUINO = $(INSTALL_DIR)/hardware/cores/arduino
+ARDUINO = $(INSTALL_DIR)/hardware/arduino/cores/arduino
 AVR_TOOLS_PATH = $(INSTALL_DIR)/hardware/tools/avr/bin
 SRC =  $(ARDUINO)/pins_arduino.c $(ARDUINO)/wiring.c \
 $(ARDUINO)/wiring_analog.c $(ARDUINO)/wiring_digital.c \
-$(ARDUINO)/wiring_pulse.c $(ARDUINO)/wiring_serial.c \
+$(ARDUINO)/wiring_pulse.c \
 $(ARDUINO)/wiring_shift.c $(ARDUINO)/WInterrupts.c
 CXXSRC = $(ARDUINO)/HardwareSerial.cpp $(ARDUINO)/WMath.cpp
 FORMAT = ihex
@@ -140,7 +140,7 @@ applet_files: $(TARGET).cpp
 	test -d applet || mkdir applet
 	echo '#include "WProgram.h"' > applet/$(TARGET).cpp
 	cat $(TARGET).cpp >> applet/$(TARGET).cpp
-	cat $(ARDUINO)/main.cxx >> applet/$(TARGET).cpp
+	cat $(ARDUINO)/main.cpp >> applet/$(TARGET).cpp
 
 elf: applet/$(TARGET).elf
 hex: applet/$(TARGET).hex
