@@ -22,7 +22,7 @@ The beacon WILL:
 The robot MUST:
 * have a switch (hardware or software) to set to either RED team or BLUE team
 * have RED and BLUE illumination to indicate their team
-* be no taller than 15 centimetres
+* be no taller than 30 centimetres
 * be capable of communicating using the IR PROTOCOL
 
 The robot MAY:
