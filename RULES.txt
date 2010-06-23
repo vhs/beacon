@@ -1,0 +1,54 @@
+VHS ROBOMONTH!!!!! CHALLENGE
+
+== Overview - Beacon Capture Challenge! ==
+We will conduct a series of challenges where robobots can compete solo and collaboratively to capture a set of one or more beacons within a gameplay arena.
+
+The arena WILL:
+* be on a wood floor relatively free of obstacles
+* be approximately 5 metres by 5 meters
+
+The arena MAY:
+* be physically bounded
+
+The beacon WILL:
+* Have one of three states:
+** Neutral - a beacon that is not yet captured
+** Red - a beacon that has been captured by the Red Team
+** Blue - a beacon that has been  captured by the Blue Team
+* Communicate it's state using the IR PROTOCOL
+* Watch for capture messages sent from robots using the IR PROTOCOL
+* Maintain a counter for each team representing that team's score
+
+The robot MUST:
+* have a switch (hardware or software) to set to either RED team or BLUE team
+* have RED and BLUE illumination to indicate their team
+* be no taller than 15 centimetres
+* be capable of communicating using the IR PROTOCOL
+
+The robot MAY:
+* detect IR messages of the beacons using the IR PROTOCOL
+
+The robot MUST NOT:
+* Knock the beacon over.
+
+The IR PROTOCOL is defined in ir.cpp.
+
+Refer to the physical beacon for exact implementation details. Where these rules conflict with the physical beacon, the beacon shall be considered correct.
+
+----
+
+Round #1 - June 29th, 2010
+
+We'll have a few different simple games:
+* Single beacon, Single player speed round
+* Single beacon, two player round
+
+Prize: Free VHS Kit of their choice
+
+Round #2 - TBD
+
+Prize: Displayduino
+
+Round #3 - TBD
+
+Prize: Something awesome
