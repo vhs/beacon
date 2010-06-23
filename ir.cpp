@@ -1,5 +1,5 @@
 /*
- * VHS Beacon
+ * VHS Beacon Reference Implementation
  *
  * This beacon will act as a "capture point" that will express
  * in one of 3 states - Neutral, Red, or Blue.

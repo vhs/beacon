@@ -31,6 +31,10 @@ The robot MAY:
 The robot MUST NOT:
 * Knock the beacon over.
 
+The teams MUST:
+* share their codes on github
+* have fun
+
 The IR PROTOCOL is defined in ir.cpp.
 
 Refer to the physical beacon for exact implementation details. Where these rules conflict with the physical beacon, the beacon shall be considered correct.
