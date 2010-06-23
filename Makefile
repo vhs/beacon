@@ -139,6 +139,7 @@ applet_files: $(TARGET).cpp
 	# Not the original .cpp file you actually edit...
 	test -d applet || mkdir applet
 	echo '#include "WProgram.h"' > applet/$(TARGET).cpp
+	cat ir.cpp >> applet/$(TARGET).cpp
 	cat $(TARGET).cpp >> applet/$(TARGET).cpp
 	cat $(ARDUINO)/main.cpp >> applet/$(TARGET).cpp
 
