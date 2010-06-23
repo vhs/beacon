@@ -1,0 +1,18 @@
+VHS Beacon
+
+This repository contains the source code and design of the 
+VHS ROBOMONTH!!!! Beacon.
+
+Each beacon will act as a "capture point" that will express
+in one of 3 states - Neutral, Red, or Blue.
+
+The beacon will indicate it's state using a multicolour LED
+and via an infrared pulse.
+
+The beacon can be captured by sending an infrared pulse upwards
+from underneath the beacon.
+
+See ir.cpp for details on the Infrared Protocol and example 
+implementation.
+
+See RULES.txt for the official contest rules and regulations..
