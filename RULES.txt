@@ -27,9 +27,11 @@ The robot MUST:
 
 The robot MAY:
 * detect IR messages of the beacons using the IR PROTOCOL
+* have sex
 
 The robot MUST NOT:
 * Knock the beacon over.
+* Physically harm other robots.
 
 The teams MUST:
 * share their codes on github
